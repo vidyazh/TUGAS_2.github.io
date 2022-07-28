@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas UTS Pemrograman Web</title>
+    <link href="log-in.css" rel="stylesheet" type="text/css">
+    <link href="sweetalert2.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1>Admin Toko Pakaian Rajut</b><br/><b>Log-in</b></h1>
+    <form action="home.html">
+    <table>
+    <tbody>
+        <tr>
+            <td>Username : <br> <input placeholder="Masukkan Username" type="text" id="for-username" onkeyup="validateUsername()" size="30" style="width: 390px; height: 30px;" />
+                <span id="username-error"></span></td>
+        </tr>
+
+        <tr>
+            <td>Password : <br> <input placeholder="Masukkan Password" type="password" id="for-password" onkeyup="validatePassword()" size="30" style="width: 390px; height: 30px;" />
+                <span id="password-error"></span></td>
+        </tr>
+        
+        <tr>
+            <td>
+                <button onclick="return validateForm()"  style="width: 68px; height: 50px; margin-left: 185px;"/>Submit
+            </button>
+            </td>
+        </tr>
+    </tbody>
+    </table>
+</form>
+<script src="log-in.js"></script> 
+<script src="sweetalert2.min.js"></script> 
+    
+</body>
+</html>

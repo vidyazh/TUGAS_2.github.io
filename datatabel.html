@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas UTS Pemrograman Web</title>
+    <link href="datatabel.css" rel="stylesheet" type="text/css">
+    <link href="sweetalert2.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css"/>
+ 
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+
+</head>
+<body>
+    <h1>Data</b><br/><b>Pemesanan Pakaian Rajut</b></h1>
+    <div class="first">
+        
+           
+        <div class="fotoprofil"><img src="fotoprofil.png" style="width: 70px;" /></div>
+        <p>Vidya Az Zahra</p>
+        <p>F55121002</p>
+            
+        
+        <a href="home.html">
+        <div class="second">
+            <div class="menu">
+            <p>Home</p>
+            </div>
+        </div>
+        </a>
+
+        <a href="datatabel.html">
+        <div class="third">
+            <div class="menu">
+            <p>Data Customer</p>
+            </div>
+        </div>
+        </a>
+
+        <a href="formulir-pemesanan.html">
+            <div class="third">
+                <div class="menu"> 
+                <p>Form Order</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="index.html" id="logout">
+        <div class="third">
+            <div class="menu">
+            <p>Log Out</p>
+            </div>
+        </div>
+        </a>
+    </div>
+
+    <table id="tabelsaya" class="display">
+        <thead>
+            <tr>
+                <th>Nama Pelanggan</th>
+                <th>Catalog</th>
+                <th>Warna Benang</th>
+                <th>Metode Pembayaran</th>   
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lala</td>
+                <td>Sweater</td>
+                <td>Kuning + Pink</td>
+                <td>QRIS</td>
+            </tr>
+            <tr>
+                <td>Velyta</td>
+                <td>Bucket Hat</td>
+                <td>Ungu + Putih</td>
+                <td>TUNAI</td>
+            </tr>
+            <tr>
+                <td>Zelda</td>
+                <td>Hiasan Bunga</td>
+                <td>Pink + Kuning</td>
+                <td>TUNAI</td>
+            </tr>
+            <tr>
+                <td>Nadin</td>
+                <td>Cardigan</td>
+                <td>Hitam + Pink</td>
+                <td>QRIS</td>
+            </tr>
+            <tr>
+                <td>Emely</td>
+                <td>Dompet</td>
+                <td>Biru + Peach</td>
+                <td>QRIS</td>
+            </tr>
+            <tr>
+                <td>Millie</td>
+                <td>Sweater</td>
+                <td>Peach + Putih</td>
+                <td>TUNAI</td>
+            </tr>
+            <tr>
+                <td>Sadie</td>
+                <td>Bucket Hat</td>
+                <td>Merah + Putih</td>
+                <td>QRIS</td>
+            </tr>
+            <tr>
+                <td>Zizi</td>
+                <td>Tas</td>
+                <td>Ungu + Putih</td>
+                <td>QRIS</td>
+            </tr>
+            <tr>
+                <td>Alana</td>
+                <td>Gelang</td>
+                <td>Orange</td>
+                <td>QRIS</td>
+            </tr>
+            <tr>
+                <td>Kila</td>
+                <td>Celana</td>
+                <td>Orange + Biru</td>
+                <td>TUNAI</td>
+            </tr>
+        </tbody>
+       </table>
+       <footer></footer>
+       <script>
+        $(document).ready(function(){
+            $("#tabelsaya").DataTable();
+        });
+       </script>
+       <script src="formulir-pemesanan.js"></script> 
+       <script src="sweetalert2.min.js"></script> 
+</body>
+</html>

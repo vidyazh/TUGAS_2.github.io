@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas UTS Pemrograman Web</title>
+    <link href="formulir-pemesanan.css" rel="stylesheet" type="text/css">
+    <link href="sweetalert2.min.css" rel="stylesheet" type="text/css">
+    
+</head>
+<body>
+    <h1>Pengisian Formulir untuk</b><br/><b>Pemesanan Pakaian Rajut</b></h1>
+    <div class="first">
+        
+           
+        <div class="fotoprofil"><img src="fotoprofil.png" style="width: 70px;" /></div>
+        <p>Vidya Az Zahra</p>
+        <p>F55121002</p>
+            
+        
+        <a href="home.html">
+        <div class="second">
+            <div class="menu">
+            <p>Home</p>
+            </div>
+        </div>
+        </a>
+
+        <a href="datatabel.html">
+        <div class="third">
+            <div class="menu">
+            <p>Data Customer</p>
+            </div>
+        </div>
+        </a>
+
+        <a href="formulir-pemesanan.html">
+            <div class="third">
+                <div class="menu"> 
+                <p>Form Order</p>
+                </div>
+            </div>
+        </a>
+        
+        <a href="index.html" id="logout">
+        <div class="third">
+            <div class="menu">
+            <p>Log Out</p>
+            </div>
+        </div>
+        </a>
+        </div>
+    
+    <form>
+    <table>
+    <tbody>
+        <tr>
+            <td>Nama Pelanggan : <br> 
+                <input type="text" placeholder="Masukkan Nama" id="for-pelanggan" onkeyup="validatePelanggan()" size="30" style="width: 390px; height: 30px;" />
+                <span id="pelanggan-error"></span></td>
+        </tr>
+        
+        <tr>
+            <td>
+                Catalog : <br>
+                <input type="text" placeholder="Masukkan Catalog" id="for-catalog" onkeyup="validateCatalog()" size="30" style="width: 390px; height: 30px;" />
+                <span id="catalog-error"></span></td>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+            Warna Benang : <br>
+            <input type="text" placeholder="Masukkan Warna Benang" id="for-benang" onkeyup="validateBenang()" size="30" style="width: 390px; height: 30px;" />
+                <span id="benang-error"></span>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+            Metode Pembayaran :
+            <input type="text" placeholder="Masukkan Metode Pembayaran" id="for-bayar" onkeyup="validateBayar()" size="30" style="width: 390px; height: 30px;" />
+            <span id="bayar-error"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="return validateForm()"  style="width: 68px; height: 50px; margin-left: 185px;"/>Submit
+            </button>
+            </td>
+        </tr>
+    </tbody>
+    </table>
+</form>
+
+    <script src="formulir-pemesanan.js"></script> 
+    <script src="sweetalert2.min.js"></script> 
+</body>
+</html>
