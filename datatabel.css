@@ -74,8 +74,8 @@ h1{
     font-weight: 550;
     text-align: center;
     float: right;
-    margin-top: 20rem;
-    margin-right: 30rem;
+    margin-top: -3px;
+    margin-right: 21rem;
     color: #6D4722;
 }
 
@@ -85,10 +85,11 @@ h1{
     padding: 2;
 }
 
-table{
-    width: 300px;
+#tabelsaya{
+    width: 910px;
     height: 500px;
-    
+    margin-right: 3rem;
+    margin-top: -23rem;
     float: right;
     border-radius: 6px;
     border-collapse: collapse;
@@ -99,9 +100,8 @@ table{
     color: #6D4722;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.743);
-
-
 }
+
 thead{
     background-color: #ddd5ca;
 }
